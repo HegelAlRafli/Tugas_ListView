@@ -2,10 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:tugas_listview/itemsiswa.dart';
+import 'package:tugas_listview/tabBar.dart';
 import 'package:tugas_listview/usermodel.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(TabbarExample());
 }
 
 class MyApp extends StatelessWidget {
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
           appBar: AppBar(
             title: Text("Tugas ListView"),
